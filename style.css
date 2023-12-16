@@ -1,0 +1,87 @@
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Playfair+Display:wght@500&family=Roboto:wght@300&family=Ysabeau+Infant:wght@1&display=swap');
+*{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+.container::before{
+    content: "";
+    background-image: url("bg.png");
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    opacity: 0.5;
+}
+.weather{
+    z-index: 2;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+}
+.weather div{
+    margin: 0.800rem
+}
+.weather1{
+    font-size: 4rem;
+}
+.weather3 img{
+    width: 30px;
+}
+.weather p{
+    font-size: 2rem;
+}
+.weather span{
+    margin: 4px;
+    font: 0.70rem;
+}
+nav{
+    height: 100px;
+    position: absolute;
+    bottom: 0%;
+    padding: 1rem 0;
+    box-shadow: 0 0 20 rgb(75, 69, 69);
+    background-color: rgba(53, 52, 52, 0.428);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px 100px 0 0;
+}
+nav>form{
+    width: 70%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+}
+.saerchbar{
+    color: white;
+    font-size: 1.1rem;
+    width: 98%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid white;
+    padding: 1rem 0;
+}
+nav>form>button{
+    font-size: 1.1rem;
+    border-radius: 0 50px 50px 0;
+    background-color: darkorange;
+    border: none;
+    outline: none;
+}
+
+ 
